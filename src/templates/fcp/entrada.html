@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block base_title %} Entrada Almacén {% endblock %}
+	
+{% block content %}
+	{% if user.is_authenticated %}
+		Hi {{ user.username }}!
+	{% else %}
+	  <p>You are not logged in</p>
+	  <a class="btn btn-outline-danger" href="{% url 'login' %}">login</a>
+	{% endif %}
+{% endblock %}

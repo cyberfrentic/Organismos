@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block base_title %} Prueba {% endblock %}
+	
+{% block content %}
+	<form action="" method="POST" accept-charset="utf-8"> {% csrf_token%}
+		{{ form.as_p }}
+		<input type="submit" name="aceptar" value="Submit">
+	</form>
+{% endblock %}
