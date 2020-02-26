@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('fcp/', include('fcp.urls')),
     path('autho/', include('django.contrib.auth.urls')),
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('', TemplateView.as_view(template_name='./registration/login.html'), name='home'),
 ]
 
 if settings.DEBUG:
